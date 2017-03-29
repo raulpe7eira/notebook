@@ -56,7 +56,7 @@ Acesse => *[https://notebook-rp.herokuapp.com/](https://notebook-rp.herokuapp.co
 
 #### Banco de dados
 
-**[SQlite](https://sqlite.org/)**: Utilizado por já vir embarcado na plataforma e facilitar o desenvolvimento local. 
+**[SQLite](https://sqlite.org/)**: Utilizado por já vir embarcado na plataforma e facilitar o desenvolvimento local. 
 
 **[PostgreSQL](https://www.postgresql.org/)**: Escolhido por ser indicado pelo local que será hospedado em produção.
 
