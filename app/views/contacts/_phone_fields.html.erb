@@ -1,0 +1,11 @@
+<div class="form-group form-group-sm nested-fields">
+  <%= f.label :phone %>
+  <div class="input-group">
+    <%= f.text_field :phone, class: 'form-control' %>
+    <span class="input-group-btn">
+      <%= link_to_remove_association f, class: 'btn btn-sm btn-default' do %>
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+      <% end %>
+    </span>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+<div class="panel-body">
+  <%= form_for(contact) do |f| %>
+    <% if contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= "#{pluralize(contact.errors.count, t('labels.error', count: contact.errors.count))}: #{t('messages.error')}" %></h2>
+
+      <ul>
+        <% contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+    <% end %>
+
+    <div class="form-group form-group-sm">
+      <%= f.label :kind_id %>
+      <%= collection_select :contact, :kind_id, @kind_all, :id, :description, {}, class: 'form-control' %>
+    </div>
+
+    <hr>
+
+    <div class="form-group form-group-sm">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+
+    <div class="form-group form-group-sm">
+      <%= f.label :email %>
+      <%= f.text_field :email, class: 'form-control' %>
+    </div>
+
+    <hr>
+
+    <%= f.fields_for :address do |fa| %>
+    <div class="form-group form-group-sm">
+      <%= fa.label :street %>
+      <%= fa.text_field :street, class: 'form-control' %>
+    </div>
+
+    <div class="form-group form-group-sm">
+      <%= fa.label :city %>
+      <%= fa.text_field :city, class: 'form-control' %>
+    </div>
+
+    <div class="form-group form-group-sm">
+      <%= fa.label :state %>
+      <%= fa.select :state, options_for_select(ApplicationHelper::STATES_BR, @contact.address.state), {}, class: 'form-control' %>
+    </div>
+    <% end %>
+
+    <hr>
+
+    <div id="phones">
+      <%= f.fields_for :phones do |fp| %>
+        <%= render partial: 'phone_fields', locals: { f: fp } %>
+      <% end %>
+      <%= link_to_add_association f, :phones, class: 'btn btn-sm btn-default' do %>
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <%= Phone.human_attribute_name('phone') %>
+      <% end %>
+    </div>
+
+    <hr>
+
+    <div class="form-group form-group-sm">
+      <%= f.label :rmk %>
+      <%= f.text_area :rmk, class: 'form-control' %>
+    </div>
+
+    <div class="panel-footer">
+      <%= f.submit t('buttons.save'), class: 'btn btn-sm btn-primary' %>
+      <%= link_to t('buttons.cancel'), contacts_path, class: 'btn btn-sm btn-default' %>
+    </div>
+  <% end %>
+</div>

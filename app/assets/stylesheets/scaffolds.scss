@@ -1,0 +1,57 @@
+html {
+  height:100%;
+  width:100%;
+}
+
+body {
+  background:#fbfbfb url('background.png') no-repeat right bottom fixed;
+}
+
+div.main {
+  padding-top:70px;
+}
+
+div.panel {
+  opacity:.9;
+}
+
+h2.sb-title {
+  color:#959595;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1px;
+  margin:15px 15px 0;
+  text-transform:uppercase;
+}
+
+th.sorters, th.actions, td.actions {
+  padding:5px 15px !important;
+}
+
+th.sorters {
+  max-width:68px;
+  min-width:68px;
+  width:68px;
+}
+
+th.actions {
+  max-width:98px;
+  min-width:98px;
+  width:98px;
+}
+
+div.panel-footer {
+  background:none;
+  border-top:1px solid #ddd;
+  line-height:0;
+  padding:10px 0 0;
+}
+
+div.list div.panel-footer {
+  background-color:#f5f5f5;
+  padding:10px 15px;
+}
+
+ul.pagination {
+  margin:0;
+}

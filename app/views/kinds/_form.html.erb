@@ -1,0 +1,26 @@
+<div class="panel-body">
+  <%= form_for(kind) do |f| %>
+    <% if kind.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= "#{pluralize(kind.errors.count, t('labels.error', count: kind.errors.count))}: #{t('messages.error')}" %></h2>
+
+
+      <ul>
+        <% kind.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+    <% end %>
+
+    <div class="form-group form-group-sm">
+      <%= f.label :description %>
+      <%= f.text_field :description, class: 'form-control' %>
+    </div>
+
+    <div class="panel-footer">
+      <%= f.submit t('buttons.save'), class: 'btn btn-sm btn-primary' %>
+      <%= link_to t('buttons.cancel'), kinds_path, class: 'btn btn-sm btn-default' %>
+    </div>
+  <% end %>
+</div>
