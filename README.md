@@ -62,11 +62,11 @@ Acesse => *[https://notebook-rp.herokuapp.com/](https://notebook-rp.herokuapp.co
 
 ### Frontend
 
-**[HTML](https://w3.org/html/)** + **[CSS](https://w3.org/Style/CSS/)** (c/ **[Bootstrap](http://getbootstrap.com/)**) + **[JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** (c/ **[CoffeeScript](http://coffeescript.org/)** + **[jQuery](https://jquery.com/)**): Não usei nenhuma plataforma para implementar a esta camada, apenas bibliotecas facilitadoras.
+**[HTML](https://w3.org/html/)** + **[CSS](https://w3.org/Style/CSS/)** (c/ **[Bootstrap](http://getbootstrap.com/)**) + **[JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** (c/ **[CoffeeScript](http://coffeescript.org/)** + **[jQuery](https://jquery.com/)**): Não usei nenhuma plataforma para implementar esta camada, apenas bibliotecas facilitadoras.
 
 ### Testes
 
-`Será o foco dos próximos estudos, falta grave...` :disappointed_relieved:
+`Será o foco dos próximos estudos. Eu sei, falta grave...` :disappointed_relieved:
 
 ### Servidores de produção
 
@@ -74,6 +74,6 @@ Acesse => *[https://notebook-rp.herokuapp.com/](https://notebook-rp.herokuapp.co
 
 ## Conclusão
 
-Muito feliz com a produtividade desta plataforma, este projeto é fruto de um novo treinamento em cima dela e irá progredir conforme a evolução nos estudos.
+Muito feliz com a produtividade desta plataforma, este projeto é fruto de um treinamento pessoal em cima deste ambiente de desenvolvimento e irá progredir conforme a evolução nos estudos.
 
 **AVANTE MOÇADA!** :muscle:
