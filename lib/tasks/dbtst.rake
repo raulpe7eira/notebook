@@ -1,5 +1,6 @@
 namespace :dbtst do
   unless Rails.env.production?
+
     Faker::Config.locale = :'pt-BR'
 
     desc 'Seeding a db w/ test data for Contacts'
@@ -61,5 +62,6 @@ namespace :dbtst do
 
     desc 'Seeding a db w/ all test data'
     task all: [:seed_contacts, :seed_addresses, :seed_phones]
+
   end
 end
