@@ -25,55 +25,55 @@ $ bundle install --without production
 $ rake db:migrate db:seed
 ```
 
-## Up & Run
+## Subir & Rodar
 
-### Development environment
+### Ambiente de desenvolvemento
 
 ```bash
 $ rails s
 ```
 ![dsv-scshot](../master/scshot/dsv-scshot.png)
 
-### Test environment
+### Ambiente de teste
 
-`All tests need to be done` :disappointed_relieved:
+`Todos os testes precisam ser feitos` :disappointed_relieved:
 
-### Production environment
+### Ambiente de produção
 
-Go to => *[https://notebook-rp.herokuapp.com/](https://notebook-rp.herokuapp.com/)* :clap:
+Acesse => *[https://notebook-rp.herokuapp.com/](https://notebook-rp.herokuapp.com/)* :clap:
 
-## Considerations
+## Considerações
 
-### Platform
+### Plataforma
 
-**[Rails](http://rubyonrails.org/)**: It was a choice determined by the VLab, I decided to face the challenge even knowing very little the environment and I finish the term determined to execute the project with the desire to continue deepening in the platform.
+**[Rails](http://rubyonrails.org/)**: Escolhido para estudar o potencial da plataforma.
 
 ### Backend
 
 #### Web Server
 
-**[Puma.io](http://puma.io/)**: It was chosen because it is already in the package initialized by Rails, in addition to being recommended by the site that would host in production.
+**[Puma.io](http://puma.io/)**: É a escolha padrão da plataforma, na versão utilizada, além de ser indicado pelo local que será hospedado em produção.
 
-#### Database
+#### Banco de dados
 
-**[SQlite](https://sqlite.org/)**: It has been chosen for the development and testing environment, since it has already embarked on the Rails framework. 
+**[SQlite](https://sqlite.org/)**: Utilizado por já vir embarcado na plataforma e facilitar o desenvolvimento local. 
 
-**[PostgreSQL](https://www.postgresql.org/)**: It was chosen for production environment by recommendation of the location that would host the application.
+**[PostgreSQL](https://www.postgresql.org/)**: Escolhido por ser indicado pelo local que será hospedado em produção.
 
 ### Frontend
 
-**[HTML](https://w3.org/html/)** + **[CSS](https://w3.org/Style/CSS/)** (c/ **[Bootstrap](http://getbootstrap.com/)**) + **[JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** (c/ **[CoffeeScript](http://coffeescript.org/)** + **[jQuery](https://jquery.com/)**): I did not use any framework to implement this layer of the solution, only facilitating libraries, because it is a simple project.
+**[HTML](https://w3.org/html/)** + **[CSS](https://w3.org/Style/CSS/)** (c/ **[Bootstrap](http://getbootstrap.com/)**) + **[JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** (c/ **[CoffeeScript](http://coffeescript.org/)** + **[jQuery](https://jquery.com/)**): Não usei nenhuma plataforma para implementar a esta camada, apenas bibliotecas facilitadoras.
 
-### Tests
+### Testes
 
-`Was missing to study and apply every part of application tests, serious fault...` :disappointed_relieved:
+`Será o foco dos próximos estudos, falta grave...` :disappointed_relieved:
 
-### Production Servers
+### Servidores de produção
 
-**[Heroku](https://heroku.com)** (PAAS): Although it was determined by the VLab, already knew the environment, super practical to use and easy to set up. Because of the lack of testing, integration with [GitHub](https://github.com/) was not done.
+**[Heroku](https://heroku.com)** (PAAS): Escolhido por ter suporte grátis para aplicações [Rails](http://rubyonrails.org/), além de ter uma boa integração com o [GitHub](https://github.com/).
 
-## Conclusion
+## Conclusão
 
-I learned a lot in these 3 days of project development, even more than I barely knew the language in which I set out to face the challenge, satisfied with the result and willing to know even more deeply the whole platform, especially the parts that I could not study right in this short time (Tests).
+Muito feliz com a produtividade desta plataforma, este projeto é fruto de um novo treinamento em cima dela e irá progredir conforme a evolução nos estudos.
 
-**LET'S GO, GUYS!** :muscle:
+**AVANTE MOÇADA!** :muscle:
