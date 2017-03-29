@@ -52,7 +52,7 @@ Acesse => *[https://notebook-rp.herokuapp.com/](https://notebook-rp.herokuapp.co
 
 #### Web Server
 
-**[Puma.io](http://puma.io/)**: É a escolha padrão da plataforma, na versão utilizada, além de ser indicado pelo local que será hospedado em produção.
+**[Puma.io](http://puma.io/)**: É a escolha padrão da plataforma, na versão utilizada ([5.0.2](http://weblog.rubyonrails.org/2017/3/1/Rails-5-0-2-has-been-released/)), além de ser indicado pelo local que será hospedado em produção.
 
 #### Banco de dados
 
